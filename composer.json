@@ -1,0 +1,12 @@
+{
+  "autoload": {
+    "psr-4": {
+      "FrameworkAULA\\": "vendor/frameworkAULA/",
+      "App\\": "app/"
+    }
+  },
+  "require": {
+    "symfony/var-dumper": "^3.1",
+    "klein/klein": "dev-master"
+  }
+}
