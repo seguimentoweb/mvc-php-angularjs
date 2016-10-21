@@ -1,5 +1,7 @@
 <?php
 require_once __DIR__ . '/../vendor/autoload.php';
+require_once __DIR__ . '/configuration.php';
+require_once __DIR__ . '/helpers.php';
 
 $base  = dirname($_SERVER['PHP_SELF']);
 
@@ -11,6 +13,6 @@ if(ltrim($base, '/')){
 
 $route = new FrameworkAULA\Route\Routing();
 
-require_once __DIR__ . '/../app/routes.php';
+require_once APP . '/routes.php';
 
-$route->dispatch();
+return $route;

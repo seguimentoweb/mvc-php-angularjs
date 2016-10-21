@@ -7,6 +7,6 @@ class LoginController extends Controller
 {
     public function index()
     {
-        echo 'Tela de login';
+        $this->service->render('login/index.phtml');
     }
 }

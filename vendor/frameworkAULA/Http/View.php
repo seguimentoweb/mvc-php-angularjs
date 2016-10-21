@@ -5,8 +5,8 @@ use Klein\ServiceProvider;
 
 class View extends ServiceProvider
 {
-    public function render($view = [], $data = [])
+    public function render($view, Array $data = [])
     {
-        parent::render("app/Views/" . $view, $data);
+        parent::render(VIEWS . "/" . $view, $data);
     }
 }
